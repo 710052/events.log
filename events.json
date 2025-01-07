@@ -1,0 +1,528 @@
+// events.json
+const eventsData = {
+  "events": [
+    {
+      "category": "Traditional Holidays",
+      "events": [
+        {
+          "name": "New Year's Day",
+          "date": "01.01.2025",
+          "type": "holiday",
+          "description": "First day of the year celebrations",
+          "emoji": "🎆",
+          "animated": true
+        },
+        {
+          "name": "Lunar New Year",
+          "date": "29.01.2025",
+          "type": "cultural",
+          "description": "Year of the Dragon celebrations",
+          "emoji": "🐲 🐉",
+          "animated": true
+        },
+        {
+          "name": "Valentine's Day",
+          "date": "14.02.2025",
+          "type": "holiday",
+          "description": "Day of love and romance",
+          "emoji": "❤️",
+          "animated": true
+        },
+        {
+          "name": "St. Patrick's Day",
+          "date": "17.03.2025",
+          "type": "holiday",
+          "description": "Irish celebration",
+          "emoji": "☘️",
+          "animated": true
+        },
+        {
+          "name": "Easter Sunday",
+          "date": "20.04.2025",
+          "type": "religious",
+          "description": "Christian celebration",
+          "emoji": "🐇🐰🥚",
+          "animated": true
+        },
+        {
+          "name": "Halloween",
+          "date": "31.10.2025",
+          "type": "holiday",
+          "description": "Spooky celebrations",
+          "emoji": "🎃 👻",
+          "animated": true
+        },
+        {
+          "name": "Christmas Eve",
+          "date": "24.12.2025",
+          "type": "holiday",
+          "description": "Night before Christmas",
+          "emoji": "❄️",
+          "animated": true
+        },
+        {
+          "name": "Christmas Day",
+          "date": "25.12.2025",
+          "type": "holiday",
+          "description": "Christian celebration",
+          "emoji": "❄️",
+          "animated": true
+        },
+        {
+          "name": "Boxing Day",
+          "date": "26.12.2025",
+          "type": "holiday",
+          "description": "Day after Christmas",
+          "emoji": "🥊",
+          "animated": false
+        },
+        {
+          "name": "New Year's Eve",
+          "date": "31.12.2025",
+          "type": "holiday",
+          "description": "Last day of the year",
+          "emoji": "✨",
+          "animated": true
+        }
+      ]
+    },
+    {
+      "category": "National Days",
+      "events": [
+        {
+          "name": "Singapore National Day",
+          "date": "09.08.2025",
+          "type": "national",
+          "description": "Independence celebration",
+          "emoji": "🇸🇬",
+          "animated": false
+        },
+        {
+          "name": "Guy Fawkes Night",
+          "date": "05.11.2025",
+          "type": "cultural",
+          "description": "Bonfire Night celebration",
+          "emoji": "🔥",
+          "animated": true
+        }
+      ]
+    },
+    {
+      "category": "Personal Events",
+      "events": [
+        {
+          "name": "Birthday",
+          "date": "15.07.2025",
+          "type": "personal",
+          "description": "Birthday celebration",
+          "emoji": "🎂",
+          "animated": true
+        },
+        {
+          "name": "Anniversary",
+          "date": "22.08.2025",
+          "type": "personal",
+          "description": "Wedding anniversary",
+          "emoji": "💑",
+          "animated": false
+        },
+        {
+          "name": "Graduation Day",
+          "date": "15.06.2025",
+          "type": "personal",
+          "description": "Graduation celebration",
+          "emoji": "🎓",
+          "animated": false
+        }
+      ]
+    },
+    {
+      "category": "Chinese/Lunar Calendar Events (Dynamic Dates for 2025)",
+      "events": [
+        {
+          "name": "Lantern Festival",
+          "date": "27.02.2025",
+          "type": "cultural",
+          "description": "15th day of Lunar New Year",
+          "emoji": "🏮",
+          "animated": true
+        },
+        {
+          "name": "Qingming Festival",
+          "date": "05.04.2025",
+          "type": "cultural",
+          "description": "Tomb-Sweeping Day",
+          "emoji": "🌿",
+          "animated": false
+        },
+        {
+          "name": "Dragon Boat Festival",
+          "date": "31.05.2025",
+          "type": "cultural",
+          "description": "Dragon Boat races",
+          "emoji": "🛶",
+          "animated": true
+        },
+        {
+          "name": "Hungry Ghost Festival",
+          "date": "22.08.2025",
+          "type": "cultural",
+          "description": "Ghost month festival",
+          "emoji": "👻",
+          "animated": true
+        },
+        {
+          "name": "Mid-Autumn Festival",
+          "date": "29.09.2025",
+          "type": "cultural",
+          "description": "Moon festival",
+          "emoji": "🌕",
+          "animated": true
+        },
+        {
+          "name": "Double Ninth Festival",
+          "date": "24.10.2025",
+          "type": "cultural",
+          "description": "Chongyang festival",
+          "emoji": "🍷",
+          "animated": false
+        }
+      ]
+    },
+    {
+      "category": "Crypto Events",
+      "events": [
+        {
+          "name": "Genesis Block Day",
+          "date": "03.01.2025",
+          "type": "crypto",
+          "description": "Bitcoin genesis block anniversary",
+          "emoji": "₿",
+          "animated": true
+        },
+        {
+          "name": "First Bitcoin Transaction Day",
+          "date": "12.01.2025",
+          "type": "crypto",
+          "description": "First Bitcoin transaction",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "First Bitcoin Exchange Day",
+          "date": "06.02.2025",
+          "type": "crypto",
+          "description": "First Bitcoin exchange",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Bitcoin Market Cap $1 Day",
+          "date": "17.03.2025",
+          "type": "crypto",
+          "description": "Bitcoin market cap reaches $1",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Mt.Gox Launch Day",
+          "date": "17.07.2025",
+          "type": "crypto",
+          "description": "Mt.Gox launch",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Ethereum Launch Day",
+          "date": "30.07.2025",
+          "type": "crypto",
+          "description": "Ethereum launch",
+          "emoji": "Ξ",
+          "animated": false
+        },
+        {
+          "name": "First Bitcoin Smart Contract Day",
+          "date": "18.08.2025",
+          "type": "crypto",
+          "description": "First Bitcoin smart contract",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Bitcoin Legal Tender Day",
+          "date": "07.09.2025",
+          "type": "crypto",
+          "description": "Bitcoin becomes legal tender in El Salvador",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "First Lightning Network Transaction",
+          "date": "05.10.2025",
+          "type": "crypto",
+          "description": "First Lightning Network transaction",
+          "emoji": "⚡",
+          "animated": false
+        },
+        {
+          "name": "Bitcoin Pizza Day",
+          "date": "22.05.2025",
+          "type": "crypto",
+          "description": "10,000 BTC pizza purchase",
+          "emoji": "🍕",
+          "animated": false
+        },
+        {
+          "name": "Bitcoin Whitepaper Day",
+          "date": "31.10.2025",
+          "type": "crypto",
+          "description": "Satoshi's whitepaper release",
+          "emoji": "📄",
+          "animated": false
+        },
+        {
+          "name": "Bitcoin All-Time High Day",
+          "date": "28.11.2025",
+          "type": "crypto",
+          "description": "Bitcoin reaches all-time high of $69,000",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "First Bitcoin Mining Day",
+          "date": "09.12.2025",
+          "type": "crypto",
+          "description": "First Bitcoin mining",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Taproot Upgrade Anniversary",
+          "date": "14.11.2025",
+          "type": "crypto",
+          "description": "Taproot upgrade anniversary",
+          "emoji": "₿",
+          "animated": false
+        },
+        {
+          "name": "Black Thursday Crash",
+          "date": "12.03.2025",
+          "type": "crypto",
+          "description": "Black Thursday crash",
+          "emoji": "📉",
+          "animated": false
+        }
+      ]
+    },
+    {
+      "category": "Crypto Historical Events",
+      "events": [
+        {
+          "name": "Crypto.com Hack Day",
+          "date": "26.01.2025",
+          "type": "crypto-hack",
+          "description": "Crypto.com hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$30M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in January 2022"
+        },
+        {
+          "name": "Mt.Gox Hack Discovery Day",
+          "date": "07.02.2025",
+          "type": "crypto-hack",
+          "description": "Mt.Gox hack discovery anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$30M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack discovered in February 2014"
+        },
+        {
+          "name": "Mt. Gox Incident",
+          "date": "07.02.2025",
+          "type": "crypto-hack",
+          "description": "Mt. Gox hack anniversary",
+          "emoji": "⚠️",
+          "animated": true,
+          "current_value": "$30M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack discovered in February 2014, 850k BTC stolen"
+        },
+        {
+          "name": "Ronin Bridge Hack Day",
+          "date": "23.03.2025",
+          "type": "crypto-hack",
+          "description": "Ronin Bridge hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$615M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in March 2022"
+        },
+        {
+          "name": "Beanstalk Hack Day",
+          "date": "17.04.2025",
+          "type": "crypto-hack",
+          "description": "Beanstalk hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$182M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in April 2022"
+        },
+        {
+          "name": "BitFinex Hack Day",
+          "date": "07.05.2025",
+          "type": "crypto-hack",
+          "description": "BitFinex hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$120k BTC",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in May 2016"
+        },
+        {
+          "name": "DAO Hack Day",
+          "date": "07.06.2025",
+          "type": "crypto-hack",
+          "description": "DAO hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$60M ETH",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in June 2016"
+        },
+        {
+          "name": "Nomad Bridge Hack Day",
+          "date": "03.08.2025",
+          "type": "crypto-hack",
+          "description": "Nomad Bridge hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$190M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in August 2022"
+        },
+        {
+          "name": "PolyNetwork Hack Day",
+          "date": "10.08.2025",
+          "type": "crypto-hack",
+          "description": "PolyNetwork hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "$610M",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in August 2021"
+        },
+        {
+          "name": "FTX Collapse Day",
+          "date": "08.11.2025",
+          "type": "crypto-hack",
+          "description": "FTX exchange collapse",
+          "emoji": "💥",
+          "animated": true,
+          "current_value": "$610M",
+          "recovery_status": "Ongoing investigations",
+          "technical_details": "Collapse in November 2022"
+        },
+        {
+          "name": "NiceHash Hack Day",
+          "date": "11.12.2025",
+          "type": "crypto-hack",
+          "description": "NiceHash hack anniversary",
+          "emoji": "⚠️",
+          "animated": false,
+          "current_value": "4,700 BTC",
+          "recovery_status": "Partial recovery",
+          "technical_details": "Hack in December 2017"
+        }
+      ]
+    },
+    {
+      "category": "Halving Events (Dynamic)",
+      "events": [
+        {
+          "name": "First Halving",
+          "date": "28.11.2012",
+          "type": "crypto",
+          "description": "First Bitcoin block reward halving",
+          "emoji": "⛏️",
+          "animated": false
+        },
+        {
+          "name": "Second Halving",
+          "date": "09.07.2016",
+          "type": "crypto",
+          "description": "Second Bitcoin block reward halving",
+          "emoji": "⛏️",
+          "animated": false
+        },
+        {
+          "name": "Third Halving",
+          "date": "11.05.2020",
+          "type": "crypto",
+          "description": "Third Bitcoin block reward halving",
+          "emoji": "⛏️",
+          "animated": false
+        },
+        {
+          "name": "Fourth Halving",
+          "date": "15.04.2024",
+          "type": "crypto",
+          "description": "Bitcoin block reward halving",
+          "emoji": "⛏️",
+          "animated": true
+        }
+      ]
+    },
+    {
+      "category": "Festival Events",
+      "events": [
+        {
+          "name": "Holi Festival",
+          "date": "14.03.2025",
+          "type": "cultural",
+          "description": "Festival of Colors",
+          "emoji": "🎨",
+          "animated": true
+        }
+      ]
+    }
+  ]
+};
+
+// Parser function
+const parseEvents = () => {
+    try {
+        // In production, this would fetch from events.json
+        const events = eventsData.events;
+
+        // Flatten the events array and sort by date
+        const flattenedEvents = events.flatMap(category => category.events);
+        return flattenedEvents.sort((a, b) => {
+            const [aDay, aMonth] = a.date.split('.').map(Number);
+            const [bDay, bMonth] = b.date.split('.').map(Number);
+            return aMonth - bMonth || aDay - bDay;
+        });
+    } catch (error) {
+        console.error('Error parsing events:', error);
+        return [];
+    }
+};
+
+// Usage in terminal component:
+const events = parseEvents();
+
+// Example filter functions
+const getEventsByType = (type) =>
+    events.filter(event => event.type.toLowerCase() === type.toLowerCase());
+
+const searchEvents = (term) =>
+    events.filter(event =>
+        event.name.toLowerCase().includes(term.toLowerCase()) ||
+        event.description.toLowerCase().includes(term.toLowerCase())
+    );
+
+    
